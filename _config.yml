@@ -13,7 +13,12 @@ defaults:
   values:
     permalink: "/blog/:title/"
     layout: post
-    author:
+    author: "Gaurav Nanda"
+
+collections:
+    projects:
+        output: true
+        permalink: /projects/:title/
 
 # Jekyll
 permalink:          /blog/:title/
