@@ -3,7 +3,7 @@ layout: post
 title:  "Week 2 of Development – Obtain mesh data from the GPU"
 date:   2017-06-21
 excerpt: "Before I get to the physics meat of the project, I need to have a water body to put the boat on."
-image: "/images/Posts/2017-06-22/oceancsWireframe.gif"
+image: "/images/Posts/2017-06-21/oceancsWireframe.gif"
 comments: true
 ---
 Since I am using pre-existing code to simulate a body of water on the GPU, my project is much easier. I am using the DirectX 11 SDK sample by nVidia that implemented Tessendorf waves to showcase GPU Compute on their graphics cards.

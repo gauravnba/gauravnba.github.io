@@ -43,7 +43,6 @@
 						{% assign mod3 = forloop.index | modulo: 3 %}
 							<article>
 								<header>
-									<!-- <span class="date">{{ project.date | date_to_string }}</span> -->
 									<h2><a href="{{ project.url | absolute_url }}">{{ project.title }}</a></h2>
 								</header>
 								<a href="{{ project.url | absolute_url }}" class="image fit"><img src="{{ project.image | absolute_url }}" alt="" /></a>
@@ -52,18 +51,8 @@
 									<li><a href="{{ project.url | absolute_url }}" class="button">Read More</a></li>
 								</ul>
 							</article>
-							<!-- {% if mod3 == 0 %}
-							<article>
-								<header>
-									<h2><a href="#">Sponsored</a></h2>
-								</header>
-
-							</article>
-							{% endif %} -->
 						{% endfor %}
-
 					</section>
-
 				</div>
 
 				<!-- Footer -->

@@ -108,4 +108,4 @@ for (auto& tri : mTriLocations)
 ```
 This gives us a result where the submerged triangles can be obtained and even they are fully or partially submerged. To move on with the project, I decided to use fully submerged triangles only. I can come back and modify the code to get the centre of submerged mass of the partially submerged triangles. Shown below, is the result where only the submerged triangles are drawn to the water surface.
 
-<img style="width:100%;" src="/images/Posts/2017-07-19/submergedtris.gif"/>
+<img style="width:100%;" src="/images/Posts/2017-07-12/submergedtris.gif"/>
