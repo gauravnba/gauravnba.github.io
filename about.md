@@ -9,7 +9,7 @@ sitemap:
 ---
 ## About Me
 
-<span class="image left"><img src="{{ "/images/Gaurav Nanda 6_print.jpg" | absolute_url }}" alt="" /></span>
+<span class="image left"><img src="{{ "/images/Gaurav Nanda_FIEA.jpg" | absolute_url }}" alt="" /></span>
 
 My name is Gaurav Nanda and I'm a game programmer. I like to work as a generalist on game projects. I feel my strong suits are gameplay and physics programming. I am also currently working on teaching myself animation and graphics programming.
 
