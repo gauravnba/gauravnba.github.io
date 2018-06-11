@@ -3,7 +3,7 @@ layout: post
 title:  "Week 5 of Development – Submersion of Triangles and surprise bug fixing"
 date:   2017-07-12
 excerpt: "Surprise debugging and using the mesh primitives to find out which tris are submerged."
-image: "/images/Posts/2017-07-19/submergedtris.gif"
+image: "/images/Posts/2017-07-12/submergedtris.gif"
 comments: true
 ---
 This week, I started development to find out which triangles on the boat mesh were submerged and hence needed to be processed for intersection. To be able to do that, I needed a way to determine whether the triangle was submerged or not. However, for the algorithm to work, I need to know how many edges of the triangle are submerged. A boolean clearly doesn’t work in these cases, hence I went with a simple enumerated class:
@@ -59,7 +59,7 @@ for (PxU32 i = 0; i < vertexCount; i++)
 ```
 I also now only store the Z heights of the water surface, instead of FVectors. This enabled me to efficiently process the heights of each of the vertices of the triangles. Each height at index in the WaveworksDisplacements array was perfectly correspondent to the array of triangle vertex position vectors. This meant that I can use the same struct Tri with the indices, to index into each of the arrays at the same value to get the correct results.
 
-<div style="text-align: center;"><img src="/images/Posts/2017-07-19/arrayindexoutofbounds.png"/></div>
+<div style="text-align: center;"><img src="/images/Posts/2017-07-12/arrayindexoutofbounds.png"/></div>
 
 As I made these changes, I found a bug in the code, where on seemingly random circumstances, Unreal reports an ‘Array index out of bounds error’ for the displacement array. On further inspection, it seems like a race condition on the waveworks displacement array, where I am trying to read from the array when the Waveworks software is writing to it. I fixed it temporarily by moving the SampleDisplacements query to Waveworks to after reading the array. This way, the thread starts writing to the array after I’m done reading from it. Need to profile to see if a mutex would be a sound solution to this. But for now, this solution seems to work.
 

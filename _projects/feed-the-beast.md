@@ -4,7 +4,6 @@ title: "Feed the Beast"
 excerpt: "Feed the Beast was a rapid prototype game, made using ActionScript 3.0 in Adobe Animate with a team of two programmers, two artists and one producer."
 image: "/images/Projects/FeedTheBeast/FeedTheBeast.png"
 source: "https://github.com/gauravnba/FeedTheBeast"
-date: 2018-07-10
 ---
 
 Feed the Beast was a rapid prototype game, made using ActionScript 3.0 in Adobe Animate with a team of two programmers, two artists and one producer. The game allowed you control of a Lion that can feed on prey by making contact with them.

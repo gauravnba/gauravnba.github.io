@@ -4,7 +4,6 @@ title: "3D Solar System Model"
 excerpt: "My first foray into graphics programming using DirectX 11 to render out our Solar System."
 image: "/images/Projects/SolarSystem/ViewByTheSun.png"
 source: "https://github.com/gauravnba/SolarSystemModel"
-date: 2018-07-10
 ---
 As an exercise to learn 3D graphics programming and shader programming, I created a model of our Solar System with the the sun, the 8 planets, Pluto and some select moons. I used a framework to help start the project, created by Dr. Paul Varcholik at https://bitbucket.org/pvarcholik/bespoke.games.framework
 

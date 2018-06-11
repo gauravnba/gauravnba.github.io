@@ -3,7 +3,6 @@ layout: project
 title: "Data Driven Game Engine"
 excerpt: "A data driven game engine written in C++ 11 during my course at FIEA. Utilizes a custom XML scripting interface to build a game world with a game object hierarchy."
 source: "https://github.com/gauravnba/MahatmaGameEngine"
-date: 2018-07-10
 ---
 This is a Game Engine, I made for our course in FIEA, designed to parse a game world from an XML file. I used the Expat C library to parse XML files.
 The primary objectives of this project

@@ -4,7 +4,6 @@ title: "Ghost Chamber"
 excerpt: "Our attempt at recreating the JARVIS interface from Iron Man. We were only a few million Dollars of hologram short from recreating it."
 image: "/images/Projects/GameLab/GhostChamber_V3.jpg"
 source: "https://github.com/GhostChamber/autocad-plugin-tests"
-date: 2018-07-10
 ---
 This was a hardware project created for our GameLab class, with a team of three programmers, one producer and one artist.
 
