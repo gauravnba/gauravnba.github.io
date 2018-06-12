@@ -12,22 +12,17 @@ img {vertical-align: middle;}
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
   position: absolute;
   top: 47%;
   width: auto;
-  padding: 16px;
   margin-top: -3vh;
   font-weight: bold;
-  font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 5.6%;
-  border-radius: 3px 0 0 3px;
 }
 
 /* Caption text */
@@ -43,14 +38,14 @@ img {vertical-align: middle;}
   height: 0.6rem;
   width: 0.6rem;
   margin: 0 0.06rem;
-  background-color: #bbb;
+  background-color: #000;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #848484;
 }
 
 /* Fading animation */

@@ -11,7 +11,7 @@ sitemap:
 
 <span class="image left"><img src="{{ "/images/Gaurav Nanda_FIEA.jpg" | absolute_url }}" alt="" /></span>
 
-My name is Gaurav Nanda and I'm a game programmer. I like to work as a generalist on game projects. I feel my strong suits are gameplay and physics programming. I am also currently working on teaching myself animation and graphics programming.
+Hi! I am Gaurav Nanda and I'm a game programmer. I enjoy working as a generalist on game projects. I feel my strong suits are gameplay and physics programming. I am also currently working on teaching myself animation and graphics programming.
 
 I have always been drawn to Engineering. The whole process of figuring out a plan, coming across problems and then fixing them is my jam. As programming games is a field composed of so many different disciplines, it seems to hit the spot just right for me.
 
@@ -20,7 +20,7 @@ Now now, I'm not just a <strike>robot</strike> programmer. I do other things too
 ### Resume
 <object data="/files/GauravNanda_Resume.pdf" type="application/pdf" width="100%" height="1500px"> 
 	<p>Hmm, you don't seem to have a PDF plugin for your browser.
-	That's alright, you can <a href="resume.pdf">click here download it.</a></p>
+	That's alright, you can <a href="/files/GauravNanda_Resume.pdf">click here download it.</a></p>
 </object>
 
 <span class="image right"><a href="mailto:info@gnanda.com?subject=What in blazes is that Lego Monstrosity!?"><img src="{{ "/images/LegoMonstrosity.jpg" | absolute_url }}" alt="" /></a></span>
