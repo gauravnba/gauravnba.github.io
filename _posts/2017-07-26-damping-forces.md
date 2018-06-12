@@ -34,7 +34,7 @@ FVector BoatPhysicsUtil::TriangleNormal(const FVector& vertex1, const FVector& v
 }
 ```
 The first hydrostatic force to apply will be viscous water resistance.
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <div style="text-align: center;">$$\overrightarrow {F_{vi}} = \frac{1}{2} \rho \frac {0.075}{(log_{10} R_n - 2)^2} S_i v_{fi} \overrightarrow {v_{fi}}$$</div>
 **_ρ_** = density of water																																												<br>
 **_R<sub>n</sub>_** = Reynold’s number, which is the result of division of the product of speed of the body and the length along the body that the fluid has to traverse by the viscosity of the fluid   	<br>

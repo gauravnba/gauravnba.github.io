@@ -24,7 +24,7 @@ and $$t_L = -\frac {h_L}{(h_H – h_L)}$$
 
 As far as the linear force is concerned, we can sum only the vertical component of the hydrostatic force since we have seen that the other forces cancel each other. The force on a submerged triangle is:
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <div style="text-align: center;">$$\overrightarrow F = -\rho g  h_{center} \overrightarrow n$$</div>
 
 Where hcenter is the depth under water of the center of the triangle, and n is the normal to the triangle directed outward.
