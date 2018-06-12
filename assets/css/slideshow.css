@@ -38,8 +38,7 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  padding-right: 4rem
-  position: absolute;
+  margin-top: -4rem;
   bottom: 8px;
   width: 100%;
   text-align: center;

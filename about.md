@@ -23,10 +23,8 @@ Now now, I'm not just a <strike>robot</strike> programmer. I do other things too
 	That's alright, you can <a href="resume.pdf">click here download it.</a></p>
 </object>
 
-<span class="image left"><a href="mailto:info@gnanda.com?subject=What in blazes is that Lego Monstrosity!?" class = "image fit"><img src="{{ "/images/LegoMonstrosity.jpg" | absolute_url }}" alt="" /></a></span>
+<span class="image right"><a href="mailto:info@gnanda.com?subject=What in blazes is that Lego Monstrosity!?"><img src="{{ "/images/LegoMonstrosity.jpg" | absolute_url }}" alt="" /></a></span>
 
-I'm also quite a car nerd. With no car. Yes. 
-
-And majorly interested in motorsport. That's mostly it.
-
-(Hit me up if you'd like to know more about this Lego masterpiece.)
+<br><br><br>
+Hit me up if you'd like to know more about this Lego masterpiece. &#8594;
+(Or you can just click it.)

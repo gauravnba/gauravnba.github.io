@@ -105,27 +105,26 @@ sitemap:
 										header[0].appendChild(video);
 									}
 								</script>
-								<p>Scroll just a bit further to check out some of the projects that I've worked on.</p>
+								<h1>Projects</h1>
 							</header>
 							<!--Projects slideshow-->
 							<div class="slideshow-container">
 								<!-- Full-width images with number and caption text -->
+								{% for project in site.projects %}
 								<div class="mySlides fade">
-									<img src="/images/Projects/FeedTheBeast/FeedTheBeast.png" style="width:100%"/>
-									<div class="text">Caption Text</div>
+									<a href="{{ project.url | absolute_url }}" class="image main"><img src="{{ project.image | absolute_url }}"/></a>
+									<div class="text"><i>{{project.title}}</i></div>
 								</div>
-								<div class="mySlides fade">
-									<img src="/images/Projects/SolarSystem/ViewByTheSun.png" style="width:100%"/>
-									<div class="text">Caption Two</div>
-								</div>
+								{% endfor %}
 								<!-- Next and previous buttons -->
 								<button class="prev button special small" onclick="plusSlides(-1)">&#10094;</button>
 								<button class="next button special small" onclick="plusSlides(1)">&#10095;</button>
 								<br>
-									<!-- The dots/circles -->
-								<div style="text-align:center">
-									<span class="dot" onclick="currentSlide(1)"></span>
-									<span class="dot" onclick="currentSlide(2)"></span>
+								<!-- The dots/circles -->
+								<div style="text-align:center; margin-top: -3rem">
+								{% for project in site.projects %}
+									<span class="dot" onclick="currentSlide(forloop.index)"></span>
+								{% endfor %}
 								</div>
 							</div>
 							<script>
@@ -164,7 +163,7 @@ sitemap:
 							</script>
 							<!-- </article> -->
 						<!-- Posts -->
-						<h1 style="text-align:center">My Dev Diary</h1>
+						<h1 style="text-align:center">Dev Diary</h1>
 							<section class="posts">
 							{% for post in site.posts limit:4 %}
   								<article>
