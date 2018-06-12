@@ -123,7 +123,7 @@ sitemap:
 								<!-- The dots/circles -->
 								<div style="text-align:center; margin-top: -3rem">
 								{% for project in site.projects %}
-									<span class="dot" onclick="currentSlide(forloop.index)"></span>
+									<span class="dot" onclick="currentSlide({{forloop.index}})"></span>
 								{% endfor %}
 								</div>
 							</div>
