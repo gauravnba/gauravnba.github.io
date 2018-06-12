@@ -16,9 +16,8 @@ sitemap:
 -->
 <html>
 	<head>
-    {% include head.html %}
-
-
+		{% include head.html %}
+		<link rel="stylesheet" type="text/css" href="/assets/css/slideshow.css">
 	</head>
 	<body class="is-loading">		
 		<div id="player" style="position: fixed; z-index: -2; width: 100%; height: 100%"></div>
@@ -76,12 +75,6 @@ sitemap:
 
 				<!-- Intro -->
 					<div id="intro">
-            <!--<h1>{{site.title}}</h1>-->
-						<!-- <h2></h2>
-						<p></a></p>
-						<ul class="actions">
-							<li><a href="#header" onclick="player.mute();" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul> -->
 						<a id="continue_button" href="#header" onclick="player.mute(); done = true;" class="button icon solo fa-arrow-down scrolly">Continue</a>
 					</div>
 
@@ -93,52 +86,87 @@ sitemap:
 				<!-- Nav -->
 					<nav id="nav">
 						{% include nav.html %}
-						<!--<ul class="icons">
-			  <li><a href="https://www.linkedin.com/{{site.linkedin}}" class="icon fa-linkedin" rel="nofollow"><span class="label">LinkedIn</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-						</ul>-->
 						{% include social.html %}
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<!-- <h2><a href="#">Massively is a versatile Jekyll theme</a></h2> -->
-									<!-- <iframe width="1903" height="758" src="https://www.youtube.com/embed/ZQRJzjga4Yw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-									<script>
-										if(!isDesktop)
-										{
-											var header = document.getElementsByClassName("major");
-											var video = document.createElement("IFRAME");
-											video.setAttribute('style', "position: relative; width: 95%");
-											video.setAttribute('src', "https://www.youtube.com/embed/ZQRJzjga4Yw?rel=0");
-											video.setAttribute('allowfullscreen', "");
-											video.setAttribute('allow', "autoplay; encrypted-media");
-											header[0].appendChild(video);
-										}
-									</script>
-									<p>Scroll just a bit further to check out some of the projects that I've worked on.</p>
-								</header>
-								<a href="#" class="image main"><img src="{{ "/images/pic01.jpg" | absolute_url }}" alt=""/></a>
+							<!-- <article class="post featured"> -->
+							<header class="major">
+								<script>
+									if(!isDesktop)
+									{
+										var header = document.getElementsByClassName("major");
+										var video = document.createElement("IFRAME");
+										video.setAttribute('style', "position: relative; width: 95%");
+										video.setAttribute('src', "https://www.youtube.com/embed/ZQRJzjga4Yw?rel=0");
+										video.setAttribute('allowfullscreen', "");
+										video.setAttribute('allow', "autoplay; encrypted-media");
+										header[0].appendChild(video);
+									}
+								</script>
+								<p>Scroll just a bit further to check out some of the projects that I've worked on.</p>
+							</header>
+							<!--Projects slideshow-->
+							<div class="slideshow-container">
+								<!-- Full-width images with number and caption text -->
+								<div class="mySlides fade">
+									<img src="/images/Projects/FeedTheBeast/FeedTheBeast.png" style="width:100%"/>
+									<div class="text">Caption Text</div>
+								</div>
+								<div class="mySlides fade">
+									<img src="/images/Projects/SolarSystem/ViewByTheSun.png" style="width:100%"/>
+									<div class="text">Caption Two</div>
+								</div>
+								<!-- Next and previous buttons -->
+								<button class="prev button special small" onclick="plusSlides(-1)">&#10094;</button>
+								<button class="next button special small" onclick="plusSlides(1)">&#10095;</button>
+								<br>
+									<!-- The dots/circles -->
+								<div style="text-align:center">
+									<span class="dot" onclick="currentSlide(1)"></span>
+									<span class="dot" onclick="currentSlide(2)"></span>
+								</div>
+							</div>
+							<script>
+								var slideIndex = 1;
+								showSlides(slideIndex);
 								
-                <p>Regardless of your website's function, the homepage is what brings the user in.
-                  If it's anything short of intriguing, captivating, or just plain cool, you're out of luck and you might deter some visitors.</p>
-                <p>Your homepage must clearly describe what your site is about.
-									Having engaging content will in this manner enable you to offer and it will make your customers more inclined to purchase from you. Content is a way to position your organization in the correct place for your clients to discover you.
-								</p>
-								<p>
-									In this manner, content in itself is a standout amongst the best promoting apparatuses in your whole advertising toolbox! Rather than making your content around your promoting technique, it's limitlessly more productive to fabricate your showcasing around your content.
-								 </p>
-
-							</article>
-
+								function plusSlides(n) 
+								{
+									showSlides(slideIndex += n);
+								}
+								
+								function currentSlide(n) 
+								{
+									showSlides(slideIndex = n);
+								}
+								
+								function showSlides(n) 
+								{
+									var i;
+									var slides = document.getElementsByClassName("mySlides");
+									var dots = document.getElementsByClassName("dot");
+									console.log(slides.length+"\n");
+									if (n > slides.length) {slideIndex = 1}    
+									if (n < 1) {slideIndex = slides.length}
+									for (i = 0; i < slides.length; i++) 
+									{
+										slides[i].style.display = "none";  
+									}
+									for (i = 0; i < dots.length; i++) 
+									{
+										dots[i].className = dots[i].className.replace(" active", "");
+									};
+									slides[slideIndex - 1].style.display = "block";  
+									dots[slideIndex - 1].className += " active";
+								}
+							</script>
+							<!-- </article> -->
 						<!-- Posts -->
+						<h1 style="text-align:center">My Dev Diary</h1>
 							<section class="posts">
-                {% for post in site.posts limit:4 %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
+							{% for post in site.posts limit:4 %}
   								<article>
   									<header>
   										<span class="date">{{ post.date | date_to_string }}</span>
@@ -150,13 +178,13 @@ sitemap:
   										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
   									</ul>
   								</article>
-                {% endfor %}
+							{% endfor %}
 							</section>
 						<!-- Footer -->
 							<footer>
-                <ul class="actions">
-                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">My Dev Diary</a></li>
-                </ul>
+								<ul class="actions">
+									<li><a href="{{ "/blog/" | absolute_url }}" class="button">My Dev Diary</a></li>
+								</ul>
 							</footer>
 
 					</div>
