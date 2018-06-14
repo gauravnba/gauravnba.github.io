@@ -41,10 +41,10 @@ sitemap:
 			{
 				player = new YT.Player('player', 
 				{
-					height: '1920',
-					width: '1080',
+					/*height: '1920',
+					width: '1080',*/
 					videoId: 'ZQRJzjga4Yw',
-					playerVars:{'controls': 0, 'showinfo': 0, 'rel': 0, 'modestbranding': 1, 'fs': 1, 'loop': 1, 'playlist': 'ZQRJzjga4Yw', 'vq': 'hd1080', 'mute': 1},
+					playerVars:{'controls': 0, 'showinfo': 0, 'rel': 0, 'modestbranding': 1, 'fs': 1, 'loop': 1, 'playlist': 'ZQRJzjga4Yw', /*'vq': 'hd1080',*/ 'mute': 1},
 					events: 
 					{
 						'onReady': onPlayerReady,
@@ -63,7 +63,7 @@ sitemap:
 			//    The function indicates that when playing a video (state=1),
 			//    the player should play for six seconds and then stop.
 			var done = false;
-			function onPlayerStateChange(event) 
+			function onPlayerStateChange(event)
 			{
 				if (event.data == YT.PlayerState.ENDED && !done) 
 				{
