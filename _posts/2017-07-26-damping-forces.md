@@ -63,8 +63,10 @@ So next, we need to apply pressure drag forces. This force is applied based on t
 
 For the Linear and Quadratic drag forces, I used 2500 as values, after some playtesting and tuning. The result was as below:
 
-<img style="width: 100%;" src="/images/Posts/2017-07-26/appliedpressuredragforces.gif">
+<img style="width: 100%;" src="/images/Posts/2017-07-26/appliedpressuredragforces.gif"/>
 
 The model looks quite stable with just these forces. However, if the boat is dropped from a height, it will bounce too high before settling. This is because there are no slamming forces added to the model. The slamming forces simulate the forces when a body tries to breach the surface of water.
+
+<img style="width: 100%;" src="/images/Posts/2017-07-26/Latest.gif"/>
 
 Additionally, the lateral roll of the boat is minimal. I suspect that this is because, earlier, the partially submerged triangles were ignored and excluded from all calculations.
