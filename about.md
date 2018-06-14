@@ -10,12 +10,11 @@ sitemap:
 ## Gaurav Nanda - Game Programmer
 
 <span class="image left"><img src="{{ "/images/Gaurav Nanda_FIEA.jpg" | absolute_url }}" alt="" /></span>
-I'm a game programmer, and closet martial artist. I recently graduated from <a target="_blank" href="https://fiea.ucf.edu/">Florida Interactive Entertainment Academy (FIEA)</a> with a Master's degree in game programming.
+I'm a game programmer, and closet martial artist. I recently graduated from <a target="_blank" href="https://fiea.ucf.edu/">Florida Interactive Entertainment Academy (FIEA)</a> with a Master's degree in Interactive Media with a major in Programming.
 
-Before studying at FIEA, I was working in Information Technology services (CRM Middleware) and found that everyday I felt less of a programmer. So I decided to try game programming on my own time and it seemed to stick. Which is why I pursued it academically.
+Before studying at FIEA, I was working in Information Technology services (CRM Middleware) and found that I did not feel satisfied with that kind of software development. I started learning game programming in my spare time and then decided to pursue it academically.
 
-I enjoy working as a generalist on game projects with particular focus on gameplay and physics programming. Trying to learn animation and graphics programming currently. I particularly enjoy working in multidisciplinary teams because of all the different viewpoints of people that I get to interact with. I have found that I'm still quite young in the industry, so I try to learn from whoever I'm working with and people I hang out with.
-
+I enjoy working as a generalist on game projects with particular focus on gameplay and physics programming. Trying to learn animation and graphics programming currently. I particularly like working in multidisciplinary teams because I have always found good opportunities to grow in that atmosphere, be it in IT or games or even a car garage.
 ### Resume
 <object style="text-align:center; width: 100%; height: 78vw;" data="/files/GauravNanda_Resume.pdf" type="application/pdf"> 
 	<p>Hmm, you don't seem to have a PDF plugin for your browser.
