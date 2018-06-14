@@ -6,18 +6,24 @@ excerpt: "This post focuses on the maths that I will be using in the project. Al
 image: "/images/Posts/2017-07-05/SimplifiedTriangleCutting.png"
 comments: true
 ---
+<style>
+	.centralize{
+		text-align: center;
+	}
+</style>
+
 In the last post, I mentioned that I switched to working on an Nvidia Waveworks integrated Unreal Project. Now, since I have water and meshes up and running (thanks Unreal), I need to get something to apply forces to. The ‘something’ that we need is the triangles of the mesh that are submerged under the water, since the buoyancy force acting on the body is the sum of all hydrostatic forces acting on each fully submerged triangle.
 
 In the above diagram, the water cuts the edge HM at $$I_M$$ and the edge HL at a point $$I_L$$. The edge ML is fully submerged. Since the intersection points lie somewhere on the edges, they can be represented with:
 
-<div style="text-align: center;">$$\overrightarrow {MI_M} = t_M \overrightarrow {MH}$$
+<div class="centralize">$$\overrightarrow {MI_M} = t_M \overrightarrow {MH}$$
 
 and $$\overrightarrow {LI_L} = t_L \overrightarrow {LH}$$
 </div>
 
 Where t is the factor with which to multiply the length to get the length of edge submerged. The height of points above water can be used to find suitable value of t.
 
-<div style="text-align: center;">$$t_M = -\frac {h_M}{(h_H – h_M)}$$
+<div class="centralize">$$t_M = -\frac {h_M}{(h_H – h_M)}$$
 
 and $$t_L = -\frac {h_L}{(h_H – h_L)}$$
 </div>
@@ -25,7 +31,7 @@ and $$t_L = -\frac {h_L}{(h_H – h_L)}$$
 As far as the linear force is concerned, we can sum only the vertical component of the hydrostatic force since we have seen that the other forces cancel each other. The force on a submerged triangle is:
 
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<div style="text-align: center;">$$\overrightarrow F = -\rho g  h_{center} \overrightarrow n$$</div>
+<div class="centralize">$$\overrightarrow F = -\rho g  h_{center} \overrightarrow n$$</div>
 
 Where hcenter is the depth under water of the center of the triangle, and n is the normal to the triangle directed outward.
 

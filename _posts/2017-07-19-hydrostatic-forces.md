@@ -6,11 +6,16 @@ excerpt: "I finally apply forces to the boat this week. Not quite what I expecte
 image:
 comments: true
 ---
+<style>
+	.centralize {
+		text-align: center;
+	}
+</style>
 Last week, I obtained the fully submerged triangles on the boat’s mesh so that I can apply hydrostatic forces to those triangles. This week, I will apply those forces to the triangles.
 The buoyancy force acting on the body is the sum of all hydrostatic forces acting on each fully submerged triangle. As far as the linear force is concerned, we can sum only the vertical component of the hydrostatic force since we have seen that the other forces cancel each other. The force on a submerged triangle is:
 
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<div style="text-align: center;">$$\overrightarrow F = -\rho g  h_{center} \overrightarrow n$$</div>
+<div class="centralize">$$\overrightarrow F = -\rho g  h_{center} \overrightarrow n$$</div>
 Where,<br>
 **_F_** is the hydrostatic force acting on the object,														<br>
 **_ρ_** is the density of fluid                                                                             <br>
@@ -38,8 +43,8 @@ mMeshComponent->AddImpulseAtLocation(hydrostaticForce, centroid);
 ```
 Since, this does not apply the impulse, but merely adds to its value, it’s a relatively cheap operation and hence we do this for each triangle.
 Application of the Hydrostatic forces will result in the following:
-<p style="text-align: center;"><i>(aaaaand drumroll)</i></p>
+<p class="centralize"><i>(aaaaand drumroll)</i></p>
 
-<img style="width: 100%;" src="/images/Posts/2017-07-19/hydrostaticforcesapplication.gif">
+<img width="100%" src="/images/Posts/2017-07-19/hydrostaticforcesapplication.gif">
 
 As can be seen, the hydrostatic forces are too wild. Nobody is fishing in that boat anytime soon; it’ll be too messy. Hydrodynamic forces need to be applied to the boat, in order to get the necessary damping to make the boat behave in a stable manner. Also, we see there is an extra torque being applied to the boat; this may be a result of the force not acting at the true centre of application of force. Which means, the application of force at the centroid of the triangle may be slightly off.

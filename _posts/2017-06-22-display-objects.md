@@ -7,6 +7,12 @@ image:
 comments: true
 ---
 
+<style>
+	.centralize{
+		text-align: center;
+	}
+</style>
+
 Last week was crazy with the other projects that I’m working on at FIEA. I barely had enough time to work on this project. What’s worse, it seems like this will snowball into next week’s work with all the projects; note to self – need to manage time better.
 
 This week, I decided to work on getting a simple mesh rendered to screen. This will have to be done in a class ‘RenderableObject’, which will hold the world, view and projection matrices, along with the vertex shader and pixel shader required and the X, Y and Z positions to use for translation. The vertex shader and the pixel shader will be static and shared across all the instances of this class.
@@ -68,7 +74,7 @@ The Draw() method will set up the buffers and render the mesh.
 
 Now that the RenderableObject class has the code in it, I create a vector of unique pointers to objects of RenderableObject in the main file, and add a single object to it in the Initialize. I then set up the calls to Initialize() and the Draw() from the respective callback functions set up for DXUT. I don’t need to call the Update() for this test. Now comes the moment of truth – I start the program and it shows me a failure message.
 
-<figure style="text-align:center; font-size: 17px;">
+<figure class="centralize; font-size: 17px;">
 	<img src="/images/Posts/2017-06-22/failedtoinitializerenderableobject.png"/>
 	<figcaption><i>The error message on run</i></figcaption>
 </figure>

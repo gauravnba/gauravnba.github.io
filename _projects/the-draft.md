@@ -6,7 +6,7 @@ image: "/images/Projects/TheDraft/ArcherGameplay.png"
 ---
 The Draft is a virtual reality, strategy sports, game where the units are also the ball. The idea behind The Draft is giving the player complete control of all aspects of the game. A traditional RTS game lets the player control the strategy and micro manage units but the actual combat itself is not under player’s control and they are a battle of stats and rules. In a full combat game, the player doesn’t have the control of unit movements like that of an RTS. The Draft is a unique blend of real time strategy, turn based action and first person combat.
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe style="position: absolute; width: 100%; height: 100%;" src="https://www.youtube.com/embed/aRyZdQP7t98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="yt-player"><iframe src="https://www.youtube.com/embed/aRyZdQP7t98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
 The map also features varying topography and spots of interests which activates various effects on the map to influencing map control including temporarily transforming to an archer giving control over a wider area.
 
@@ -22,4 +22,4 @@ I primarily worked as a Gameplay Programmer on the project, but I also acted as 
 
 **The full final presentation of the game can be found in the following video.**
 		
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe style="position: absolute; width: 100%; height: 100%;" src="https://www.youtube.com/embed/k8WSyf_sCHA?start=699&end=2580" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="yt-player"><iframe src="https://www.youtube.com/embed/k8WSyf_sCHA?start=699&end=2580" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
