@@ -37,7 +37,7 @@ function onYouTubeIframeAPIReady()
 	var buttonText = document.createTextNode("Toggle Audio");
 	button.setAttribute('id', "audio_button");
 	button.setAttribute('onclick',"toggleAudio();");
-	button.setAttribute('style',"position: absolute; margin: 1% 1%;");
+	button.setAttribute('style',"z-index:10; position: absolute; margin: 1% 1%;");
 	button.setAttribute('class',"button icon solo volume-off");
 	button.appendChild(buttonText);
 	div.appendChild(button);
