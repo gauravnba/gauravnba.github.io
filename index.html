@@ -39,56 +39,54 @@ sitemap:
 					</nav>
 				<!-- Main -->
 					<div id="main">
-							<!-- <article class="post featured"> -->
-							<header class="major">
-								<div id="mobile_video" onload="loadIframeIfMobile();"></div>
-								<h1>Projects</h1>
-							</header>
-							<!--Projects slideshow-->
-							<div class="slideshow-container">
-								<!-- Full-width images with number and caption text -->
-								{% for project in site.projects %}
-								<div class="mySlides fade">
-									<a href="{{ project.url | absolute_url }}" class="image main"><img src="{{ project.image | absolute_url }}"/></a>
-									<div class="text"><i>{{project.title}}</i></div>
-								</div>
-								{% endfor %}
-								<!-- Next and previous buttons -->
-								<button class="prev button special small" onclick="plusSlides(-1)">&#10094;</button>
-								<button class="next button special small" onclick="plusSlides(1)">&#10095;</button>
-								<br>
-								<!-- The dots/circles -->
-								<div style="text-align:center; margin-top: -3rem">
-								{% for project in site.projects %}
-									<span class="dot" onclick="currentSlide({{forloop.index}})"></span>
-								{% endfor %}
-								</div>
+						<header class="major">
+							<div id="mobile_video" onload="loadIframeIfMobile();"></div>
+							<h1>Projects</h1>
+						</header>
+						<!--Projects slideshow-->
+						<div class="slideshow-container">
+							<!-- Full-width images with number and caption text -->
+							{% for project in site.projects %}
+							<div class="mySlides fade">
+								<a href="{{ project.url | absolute_url }}" class="image main"><img src="{{ project.image | absolute_url }}"/></a>
+								<div class="text"><i>{{project.title}}</i></div>
 							</div>
-							<script src="/assets/js/slideshow.js"></script>
-							<!-- </article> -->
+							{% endfor %}
+							<!-- Next and previous buttons -->
+							<button class="prev button special small" onclick="plusSlides(-1)">&#10094;</button>
+							<button class="next button special small" onclick="plusSlides(1)">&#10095;</button>
+							<br>
+							<!-- The dots/circles -->
+							<div style="text-align:center; margin-top: -3rem">
+							{% for project in site.projects %}
+								<span class="dot" onclick="currentSlide({{forloop.index}})"></span>
+							{% endfor %}
+							</div>
+						</div>
+						<script src="/assets/js/slideshow.js"></script>
 						<!-- Posts -->
 						<h1 style="text-align:center">Dev Diary</h1>
-							<section class="posts">
-							{% for post in site.posts limit:4 %}
-  								<article>
-  									<header>
-  										<span class="date">{{ post.date | date_to_string }}</span>
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
-  								</article>
-							{% endfor %}
-							</section>
+						<section class="posts">
+						{% for post in site.posts limit:4 %}
+  							<article>
+  								<header>
+  									<span class="date">{{ post.date | date_to_string }}</span>
+  									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+  								</header>
+  								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+  								<p>{{ post.excerpt }}</p>
+  								<ul class="actions">
+  									<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+  								</ul>
+  							</article>
+						{% endfor %}
+						</section>
 						<!-- Footer -->
-							<footer>
-								<ul class="actions">
-									<li><a href="{{ "/blog/" | absolute_url }}" class="button special">Dev Diary</a></li>
-								</ul>
-							</footer>
+						<footer>
+							<ul class="actions">
+								<li><a href="{{ "/blog/" | absolute_url }}" class="button special">Dev Diary</a></li>
+							</ul>
+						</footer>
 					</div>
 				<!-- Footer -->
         {% include foot.html %}
