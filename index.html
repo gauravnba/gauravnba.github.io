@@ -88,7 +88,8 @@ sitemap:
 		</script>
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
-				<a id="audio_button" onclick="toggleAudio();" style="position:absolute; z-index: 10; margin: 1% 1%; color: #ffffff !important;" class="button icon solo volume-off">Toggle Audio</a>
+			<div id="wrapper_first"></div>
+				<!-- <a id="audio_button" onclick="toggleAudio();" style="position:absolute; z-index: 10; margin: 1% 1%; color: #ffffff !important;" class="button icon solo volume-off">Toggle Audio</a> -->
 				<!-- Intro -->
 					<div id="intro">
 						<a id="continue_button" href="#header" onclick="player.pauseVideo(); done = true;" class="button icon solo fa-arrow-down scrolly">Continue</a>
@@ -126,9 +127,19 @@ sitemap:
 									// Listen to the scroll event to control background video.
 									window.addEventListener('scroll', runOnScroll, false);
 									
+									var div = document.getElementById("wrapper_first");
+									var button = document.createElement("a");
+									var buttonText = document.createTextNode("Toggle Audio");
+									button.setAttribute('id', "audio_button");
+									button.setAttribute('onclick',"toggleAudio();");
+									button.setAttribute('style',"position:absolute; z-index: 10; margin: 1% 1%; color: #ffffff !important;");
+									button.setAttribute('class',"button icon solo volume-off");
+									button.appendChild(buttonText);
+									div.appendChild(button);
+									console.debug(button);
+									
 									// Add mute button to the wrapper if a desktop browser is detected.
-									//var div = document.getElementById()wrapper
-									document.getElementById("audio_button").addEventListener("click", function (e) {
+									button.addEventListener("click", function (e) {
 										var target = e.target;
 									
 										target.classList.toggle("volume-on");
