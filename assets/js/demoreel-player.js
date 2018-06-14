@@ -21,13 +21,34 @@ function onYouTubeIframeAPIReady()
 		/*height: '1920',
 		width: '1080',*/
 		videoId: 'ZQRJzjga4Yw',
-		playerVars:{'controls': 0, 'showinfo': 0, 'rel': 0, 'modestbranding': 1, 'fs': 1, 'loop': 1, 'playlist': 'ZQRJzjga4Yw', /*'vq': 'hd1080',*/ 'mute': 1},
+		playerVars:{'controls': 0, 'showinfo': 0, 'rel': 0, 'modestbranding': 1, 'fs': 1, 'loop': 1, 'playlist': 'ZQRJzjga4Yw', 'vq': 'hd1080', 'mute': 1},
 		events: 
 		{
 			'onReady': onPlayerReady,
 			'onStateChange': onPlayerStateChange
 		}
 	});
+	
+	// Listen to the scroll event to control background video.
+	window.addEventListener('scroll', runOnScroll, false);
+	
+	var div = document.getElementById("wrapper_first");
+	var button = document.createElement("a");
+	var buttonText = document.createTextNode("Toggle Audio");
+	button.setAttribute('id', "audio_button");
+	button.setAttribute('onclick',"toggleAudio();");
+	button.setAttribute('style',"position: absolute; margin: 1% 1%;");
+	button.setAttribute('class',"button icon solo volume-off");
+	button.appendChild(buttonText);
+	div.appendChild(button);
+	
+	// Add mute button to the wrapper if a desktop browser is detected.
+	button.addEventListener("click", function (e) {
+		var target = e.target;
+	
+		target.classList.toggle("volume-on");
+		target.classList.toggle("volume-off");
+	}, false);
 }
 
 // 4. The API will call this function when the video player is ready.
@@ -74,29 +95,6 @@ function loadIframeIfMobile()
 		video.setAttribute('allowfullscreen', "");
 		video.setAttribute('allow', "autoplay; encrypted-media");
 		header[0].appendChild(video);
-	}
-	else
-	{	
-		// Listen to the scroll event to control background video.
-		window.addEventListener('scroll', runOnScroll, false);
-		
-		var div = document.getElementById("wrapper_first");
-		var button = document.createElement("a");
-		var buttonText = document.createTextNode("Toggle Audio");
-		button.setAttribute('id', "audio_button");
-		button.setAttribute('onclick',"toggleAudio();");
-		button.setAttribute('style',"position:absolute; z-index: 10; margin: 1% 1%; color: #ffffff !important;");
-		button.setAttribute('class',"button icon solo volume-off");
-		button.appendChild(buttonText);
-		div.appendChild(button);
-		
-		// Add mute button to the wrapper if a desktop browser is detected.
-		button.addEventListener("click", function (e) {
-			var target = e.target;
-		
-			target.classList.toggle("volume-on");
-			target.classList.toggle("volume-off");
-		}, false);
 	}
 }
 

@@ -90,7 +90,7 @@ It can’t seem to set the Constant Buffer. I need to look into why that may be.
 
 __**Major Update:**__ I decided to switch to working with an Unreal project instead. Working in a limited time frame, that seems to be the best way to cut scope and keep the focus on physics and learn graphics programming at another time.
 
-<img style="width: 100%" src="/images/Posts/2017-06-22/usingwaveworks.gif"/>
+<img width="100%" src="/images/Posts/2017-06-22/usingwaveworks.gif"/>
 
 I’m using nVidia’s Waveworks integrated into Unreal to get the water and apply it to a boat. I made a rudimentary component class to utilize the Waveworks library and apply linear floatation to the root of any Actor it is attached to. This is what the tick looks like:
 

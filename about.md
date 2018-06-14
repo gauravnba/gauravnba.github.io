@@ -16,7 +16,7 @@ Before studying at FIEA, I was working in Information Technology services (CRM M
 
 I enjoy working as a generalist on game projects with particular focus on gameplay and physics programming. Trying to learn animation and graphics programming currently. I particularly like working in multidisciplinary teams because I have always found good opportunities to grow in that atmosphere, be it in IT or games or even a car garage.
 ### Resume
-<object style="text-align:center; width: 100%; height: 78vw;" data="/files/GauravNanda_Resume.pdf" type="application/pdf"> 
+<object class="resume" data="/files/GauravNanda_Resume.pdf" type="application/pdf"> 
 	<p>Hmm, you don't seem to have a PDF plugin for your browser.
 		That's alright, you can <a href="/files/GauravNanda_Resume.pdf">click here download it.</a>
 	</p>

@@ -71,7 +71,7 @@ for (int32 triIndex = 0; triIndex < numTris; ++triIndex)
 
 In this code, I pass in the ‘outputArray’ as an output parameter to the function call. To check if the vertices I obtained are accurate, I drew each triangle as a debug in the scene.
 
-<img style="width: 100%;" src="/images/Posts/2017-07-05/RenderMeshTris.gif"/>
+<img width="100%" src="/images/Posts/2017-07-05/RenderMeshTris.gif"/>
 
 Then, from the extracted vertices, I created a 2D map of points on the X,Y plane in Unreal to obtain the Z component (vertical) of the points projected on the Waveworks surface. We do this by calling the SampleDisplacements method and capturing the result in a displacements array using a VectorArrayDelegate.
 
@@ -82,6 +82,6 @@ Then, from the extracted vertices, I created a 2D map of points on the X,Y plane
 mWaveWorksComponent->SampleDisplacements(mPositions, mWaveworksDisplacementDelegate);
 ```
 
-<img style="width: 100%;" src="/images/Posts/2017-07-05/ProjectMeshTris.gif"/>
+<img width="100%" src="/images/Posts/2017-07-05/ProjectMeshTris.gif"/>
 
 Next week, I’ll be covering how the triangle intersection algorithm can be applied to this project.
