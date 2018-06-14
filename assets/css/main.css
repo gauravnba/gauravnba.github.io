@@ -1942,6 +1942,24 @@
 				text-align: center;
 				text-indent: 0;
 			}
+			
+			input[type="submit"].icon.solo.volume-off,
+			input[type="reset"].icon.solo.volume-off,
+			input[type="button"].icon.solo.volume-off,
+			button.icon.solo.volume-off,
+			.button.icon.solo.volume-off:before {
+				content: "\f026";
+				font-family: FontAwesome;
+			}
+			
+			input[type="submit"].icon.solo.volume-on,
+			input[type="reset"].icon.solo.volume-on,
+			input[type="button"].icon.solo.volume-on,
+			button.icon.solo.volume-on,
+			.button.icon.solo.volume-on:before {
+				content: "\f028";
+				font-family: FontAwesome;
+			}
 
 		input[type="submit"].fit,
 		input[type="reset"].fit,

@@ -18,11 +18,11 @@ I have always been drawn to Engineering. The whole process of figuring out a pla
 Now now, I'm not just a <strike>robot</strike> programmer. I do other things too; like playing sports like basketball. In fact, I'm working with my team to go semi-pro. Oh, and I've been practicing Karate and Tae Kwon Do for almost two decades now. And also been trying to teach myself some grappling by practicing some Jiu Jitsu drills. Pretty badass, I know.
 
 ### Resume
-<object data="/files/GauravNanda_Resume.pdf" type="application/pdf" width="100%" height="1500px"> 
+<object style="text-align:center; width: 100%; height: 78vw;" data="/files/GauravNanda_Resume.pdf" type="application/pdf"> 
 	<p>Hmm, you don't seem to have a PDF plugin for your browser.
-	That's alright, you can <a href="/files/GauravNanda_Resume.pdf">click here download it.</a></p>
+		That's alright, you can <a href="/files/GauravNanda_Resume.pdf">click here download it.</a>
+	</p>
 </object>
-
 <span class="image right"><a href="mailto:info@gnanda.com?subject=What in blazes is that Lego Monstrosity!?" class="image fit"><img src="{{ "/images/LegoMonstrosity.jpg" | absolute_url }}" alt="" /></a></span>
 
 <br><br><br>

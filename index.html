@@ -44,7 +44,7 @@ sitemap:
 					height: '1920',
 					width: '1080',
 					videoId: 'ZQRJzjga4Yw',
-					playerVars:{'controls': 0, 'showinfo': 0, 'rel': 0, 'modestbranding': 1, 'fs': 1, 'loop': 1, 'playlist': 'ZQRJzjga4Yw', 'vq': 'hd1080'},
+					playerVars:{'controls': 0, 'showinfo': 0, 'rel': 0, 'modestbranding': 1, 'fs': 1, 'loop': 1, 'playlist': 'ZQRJzjga4Yw', 'vq': 'hd1080', 'mute': 1},
 					events: 
 					{
 						'onReady': onPlayerReady,
@@ -72,13 +72,23 @@ sitemap:
 				done = true;
 				}
 			}
+			
+			function toggleAudio()
+			{
+				if(player.isMuted())
+				{
+					player.unMute();
+				}
+				else
+				{
+					player.mute();
+				}
+			}
 		}
 		</script>
-
-
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
-
+				<a id="audio_button" onclick="toggleAudio();" style="position:absolute; z-index: 10; margin: 1% 1%; color: #ffffff !important;" class="button icon solo volume-off">Toggle Audio</a>
 				<!-- Intro -->
 					<div id="intro">
 						<a id="continue_button" href="#header" onclick="player.pauseVideo(); done = true;" class="button icon solo fa-arrow-down scrolly">Continue</a>
@@ -99,7 +109,34 @@ sitemap:
 					<div id="main">
 							<!-- <article class="post featured"> -->
 							<header class="major">
-								<script>
+								<script>				
+								// Display the video in an iframe if using a mobile screen.
+								if(!isDesktop)
+								{
+									var header = document.getElementsByClassName("major");
+									var video = document.createElement("IFRAME");
+									video.setAttribute('style', "position: relative; width: 95%");
+									video.setAttribute('src', "https://www.youtube.com/embed/ZQRJzjga4Yw?rel=0");
+									video.setAttribute('allowfullscreen', "");
+									video.setAttribute('allow', "autoplay; encrypted-media");
+									header[0].appendChild(video);
+								}
+								else
+								{	
+									// Listen to the scroll event to control background video.
+									window.addEventListener('scroll', runOnScroll, false);
+									
+									// Add mute button to the wrapper if a desktop browser is detected.
+									//var div = document.getElementById()wrapper
+									document.getElementById("audio_button").addEventListener("click", function (e) {
+										var target = e.target;
+									
+										target.classList.toggle("volume-on");
+										target.classList.toggle("volume-off");
+									}, false);
+								}
+								
+								// Check if video is in view and play or stop it based on that.
 								function runOnScroll()
 								{
 									var wrapperHeight = document.getElementById("wrapper").offsetHeight;
@@ -112,17 +149,6 @@ sitemap:
 									{
 										player.pauseVideo();
 									}
-								}
-								window.addEventListener('scroll', runOnScroll);
-								if(!isDesktop)
-								{
-									var header = document.getElementsByClassName("major");
-									var video = document.createElement("IFRAME");
-									video.setAttribute('style', "position: relative; width: 95%");
-									video.setAttribute('src', "https://www.youtube.com/embed/ZQRJzjga4Yw?rel=0");
-									video.setAttribute('allowfullscreen', "");
-									video.setAttribute('allow', "autoplay; encrypted-media");
-									header[0].appendChild(video);
 								}
 								</script>
 								<h1>Projects</h1>
