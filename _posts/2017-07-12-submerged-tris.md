@@ -3,7 +3,7 @@ layout: post
 title:  "Week 5 of Development – Submersion of Triangles and surprise bug fixing"
 date:   2017-07-12
 excerpt: "Surprise debugging and using the mesh primitives to find out which tris are submerged."
-image: "/images/Posts/2017-07-12/submergedtris.gif"
+image: "/images/Posts/2017-07-12/SubmergedTris.jpg"
 comments: true
 ---
 This week, I started development to find out which triangles on the boat mesh were submerged and hence needed to be processed for intersection. To be able to do that, I needed a way to determine whether the triangle was submerged or not. However, for the algorithm to work, I need to know how many edges of the triangle are submerged. A boolean clearly doesn’t work in these cases, hence I went with a simple enumerated class:
