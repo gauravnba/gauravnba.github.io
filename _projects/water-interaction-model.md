@@ -2,7 +2,7 @@
 layout: project
 title: "Physics Model of a Boat in Water"
 excerpt: "Since Physics and Gameplay programming is my primary interest, I started working on this project to understand the nuances involved in going from raw math to application programming."
-image: "/images/Projects/WaterInteractionModel/WaterInteractionModelScreen.png"
+image: "/images/Projects/WaterInteractionModel/WaterInteractionModelScreen.jpg"
 source: "https://github.com/gauravnba/WaterInteractionModel_UE4"
 ---
 A physics interaction model of a boat in water using Nvidia PhysX, Waveworks and Unreal Engine. Since the UE4 Editor requires Waveworks to be integrated, I used a custom build of Unreal Engine.

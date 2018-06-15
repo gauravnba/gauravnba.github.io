@@ -2,7 +2,7 @@
 layout: project
 title: "Game made in 6800 Assembly language"
 excerpt: "Yep, I was nutty enough to attempt making a game in a dead assembly language. And I would like to make more!"
-image: "/images/Projects/68KAssemblyGame/68KAssemblyGame.png"
+image: "/images/Projects/68KAssemblyGame/68KAssemblyGame.jpg"
 source: "https://github.com/gauravnba/Easy68K-sample-game"
 ---
 

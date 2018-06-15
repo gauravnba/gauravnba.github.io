@@ -2,19 +2,19 @@
 layout: project
 title: "Feed the Beast"
 excerpt: "Feed the Beast was a rapid prototype game, made using ActionScript 3.0 in Adobe Animate with a team of two programmers, two artists and one producer."
-image: "/images/Projects/FeedTheBeast/FeedTheBeast.png"
+image: "/images/Projects/FeedTheBeast/FeedTheBeast.jpg"
 source: "https://github.com/gauravnba/FeedTheBeast"
 ---
 
 Feed the Beast was a rapid prototype game, made using ActionScript 3.0 in Adobe Animate with a team of two programmers, two artists and one producer. The game allowed you control of a Lion that can feed on prey by making contact with them.
 
 As you consume enough and get past levels, the cat gets fatter. Hence heavier and slower, increasing the challenge.
-<div class="image main"><img src="/images/Projects/FeedTheBeast/FeedTheBeastLevel2.png"/></div>
+<div class="image main"><img src="/images/Projects/FeedTheBeast/FeedTheBeastLevel2.jpg"/></div>
 
 Eventually, you get so fat ...
-<div class="image main"><img src="/images/Projects/FeedTheBeast/FeedTheBeastLevel3.png"/></div>
+<div class="image main"><img src="/images/Projects/FeedTheBeast/FeedTheBeastLevel3.jpg"/></div>
 ... that you can roll around and catch more prey, faster.
-<div class="image main"><img src="/images/Projects/FeedTheBeast/FeedTheBeastLevel3_rolling.png"/></div>
+<div class="image main"><img src="/images/Projects/FeedTheBeast/FeedTheBeastLevel3_rolling.jpg"/></div>
 
 Enabling you to get fatter. All the way, until -
 <div class="image main"><img src="/images/Projects/FeedTheBeast/FeedTheBeast_FinalLevel.gif"/></div>
