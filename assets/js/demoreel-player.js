@@ -84,17 +84,20 @@ function toggleAudio()
 }
 
 // Display the video in an iframe if using a mobile screen.
+window.addEventListener("load", loadIframeIfMobile);
 function loadIframeIfMobile()
-{
+{	
 	if(!isDesktop)
-	{
-		var header = document.getElementsByClassName("major");
-		var video = document.createElement("IFRAME");
-		video.setAttribute('style', "position: relative; width: 95%");
+    {
+		var div = document.getElementById("mobile_video");
+		var video = document.createElement("iframe");
 		video.setAttribute('src', "https://www.youtube.com/embed/ZQRJzjga4Yw?rel=0");
 		video.setAttribute('allowfullscreen', "");
 		video.setAttribute('allow', "autoplay; encrypted-media");
-		header[0].appendChild(video);
+		video.setAttribute('frameborder', "0");
+		video.setAttribute('style',"margin-left: -36vw");
+		div.appendChild(video);
+		console.log(div);
 	}
 }
 

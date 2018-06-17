@@ -28,9 +28,9 @@ sitemap:
 			<div id="wrapper" class="fade-in">
 			<div id="wrapper_first"></div>
 				<!-- Intro -->
-					<div id="intro">
-						<a id="continue_button" href="#header" onclick="player.pauseVideo(); done = true;" class="button icon solo fa-arrow-down scrolly">Continue</a>
-					</div>
+            <div id="intro">
+                <a id="continue_button" href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a><!--onclick="player.pauseVideo(); done = true;"-->
+            </div>
 				<!-- Header -->
 					<header id="header">
 						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
@@ -43,7 +43,7 @@ sitemap:
 				<!-- Main -->
 					<div id="main">
 						<header class="major">
-							<div id="mobile_video" onload="loadIframeIfMobile();"></div>
+							<div id="mobile_video" class="yt-player"></div>
 							<h1>Projects</h1>
 						</header>
 						<!--Projects slideshow-->
