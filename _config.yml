@@ -39,7 +39,7 @@ sass:
 disqus_shortname:   default
 
 # Social
-analytics-id:       UA-120788741-1
+analytics-id:       "UA-120788741-1"
 facebook:           gauravnba
 linkedin:           in/gauravnba/
 github:             gauravnba
