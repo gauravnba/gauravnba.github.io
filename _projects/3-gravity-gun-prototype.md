@@ -16,4 +16,4 @@ The Gravity Gun itself works in the same manner as the original game, where **ri
 
 I also made an event handler ``UGlobalEventHandler`` that can be accessed from the global singleton static method ``AGameSingleton::GetEventHandler()``, also accessible in blueprints. The primary purpose for using this was to update the crosshair in the ``GordonFreemanHUD``. The crosshair changes when the gravity gun is equipped and highlights when a gravitizable object is in range.
 
-<a href="https://drive.google.com/open?id=1MlR4lLFx1HOAZoFAWdW64DFMj-XkjxZp" class="button fit">Play Demo (Executable in Zip file)</a>
+<a href="https://drive.google.com/open?id=15-SPaslHUOe3ppoc20Y5Y7xXx-Lg24Ag" class="button fit">Play Demo (Executable in Zip file)</a>
