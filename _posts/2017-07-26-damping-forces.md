@@ -3,7 +3,7 @@ layout: post
 title:  "Week 7 – Application of Damping Forces"
 date:   2017-07-26
 excerpt: "I add the remaining forces to the boat. Finally getting to the meat of the project."
-image: 	"/images/Posts/2017-07-19/hydrostaticforcesapplication.gif"
+image: 	"/images/Projects/WaterInteractionModel/WaterInteractionModelScreen.jpg"
 comments: true
 ---
 <style>
