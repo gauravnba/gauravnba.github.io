@@ -1012,6 +1012,6 @@ body.is-loading #intro:not(.hidden) + #header + #nav{-moz-transform:translateY(4
 @media screen and (max-width:980px){body.is-navPanel-visible #wrapper{opacity:0.5;}
 body.is-navPanel-visible #navPanel{-moz-transform:translateX(0);-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);box-shadow:0 0 1.5rem 0 rgba(0, 0, 0, 0.2);visibility:visible;}
 }
-.resume{text-align:center;width:100%;height:78vw;}
+.resume{text-align:center;width:100%;height:62vw;}
 .yt-player{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}
 .yt-player iframe{position:absolute;width:100%;height:100%;}
