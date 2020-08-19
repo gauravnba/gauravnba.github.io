@@ -45,11 +45,11 @@ linkedin:           in/gauravnba/
 github:             gauravnba
 
 # personal
-phone:              +91 982 074 8294
+phone:              +91 98207 48294
 email:              info@gnanda.com
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-sitemap
   - jekyll-feed
