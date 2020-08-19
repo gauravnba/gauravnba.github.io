@@ -22,7 +22,7 @@ I enjoy working as a generalist on game projects with particular focus on gamepl
 	</p>
 </object>
 
-Apart from programming (and games), I play basketball, practice martial arts, lift kettlebelss and walk my dog. I also have this weird obsession with coffee and brewing a great cup; but while sticking to manual equipment. Yes, I have three coffee mills, two French Presses, one Aeropress and one South Indian coffee filter, along with a thermometer and scales. No, I do not make pour overs, because I like to keep some things to do the baristas (for now).
+Apart from programming (and games), I play basketball, practice martial arts, lift kettlebells and walk my dog. I also have this weird obsession with coffee and brewing a great cup; but while sticking to manual equipment. Yes, I have three coffee mills, two French Presses, one Aeropress and one South Indian coffee filter, along with a thermometer and scales. No, I do not make pour overs, because I like to keep some things to do the baristas (for now).
 
 <span class="image right" style ="width:30%"><a href="mailto:info@gnanda.com?subject=What in blazes is that Lego Monstrosity!?" class="image fit"><img src="{{ "/images/LegoMonstrosity.jpg" | absolute_url }}" alt="" /></a></span>
 
