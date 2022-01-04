@@ -10,7 +10,7 @@ sitemap:
 ## Gaurav Nanda - Game Programmer
 
 <span class="image left"><img src="{{ "/images/Gaurav Nanda_FIEA.jpg" | absolute_url }}" alt="" /></span>
-I'm a game programmer, and closet martial artist, working at <a target="_blank" href="https://www.kiddopia.com/">Paper Boat Apps</a>, in Mumbai, India. Here, I make optimised systems that extend the cocos2d-x game engine to make engaging games for children. Before working here, I worked at Universal Orlando, in the Universal Creative division, where I leveraged my software engineering abilities to work on enhancing upcoming attractions for the park.
+I'm a game programmer, and closet martial artist, working at <a target="_blank" href="https://www.rockstargames.com/">Rockstar Games</a>, in Bangalore, India. Here, I work as a gameplay programmer on the weapons team, primarily working on the weapon swaps and systems.
 
 I studied at and graduated from <a target="_blank" href="https://fiea.ucf.edu/">Florida Interactive Entertainment Academy (FIEA)</a> with a Master's degree in Interactive Media, with a major in Programming. A course made specifically to train the students for the games industry.
 
