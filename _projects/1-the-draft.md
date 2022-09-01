@@ -4,7 +4,7 @@ title: "The Draft"
 excerpt: "The first complete game that I had worked on, in college. It was a VR, strategy, fighting, sports game."
 image: "/images/Projects/TheDraft/ArcherGameplay.jpg"
 ---
-The Draft is a virtual reality, strategy sports, game where the units are also the ball. The idea behind The Draft is giving the player complete control of all aspects of the game. A traditional RTS game lets the player control the strategy and micro manage units but the actual combat itself is not under player’s control and they are a battle of stats and rules. In a full combat game, the player doesn’t have the control of unit movements like that of an RTS. The Draft is a unique blend of real time strategy, turn based action and first person combat.
+The Draft is a virtual reality, strategy, sports game where the units are also the ball that you guide into a "goalpost". The idea behind The Draft is giving the player complete control of all aspects of the game. A traditional RTS game lets the player control the strategy and micro manage units but the actual combat itself is not under player’s control and they are a battle of stats and rules. In a full combat game, the player doesn’t have the control of unit movements like that of an RTS. The Draft is a unique blend of real time strategy, turn based action and VR combat.
 
 <div class="yt-player"><iframe src="https://www.youtube.com/embed/aRyZdQP7t98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
